@@ -23,7 +23,7 @@ class CiCdAwsPipelinePythonStack(Stack):
         super().__init__(scope, construct_id, **kwargs)
 
         git_input = pipelines.CodePipelineSource.connection(
-            repo_string="sumit1912/ci-cd-aws-pipeline-typescript",
+            repo_string="sumit1912/ci-cd-aws-pipeline-python",
             branch="main",
             connection_arn="arn:aws:codestar-connections:eu-central-1:496932237066:connection/54bd73f5-1116-4856-805a-7d8725576248"
         )
