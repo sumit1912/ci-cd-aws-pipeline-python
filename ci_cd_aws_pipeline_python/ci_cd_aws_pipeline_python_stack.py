@@ -25,7 +25,7 @@ class CiCdAwsPipelinePythonStack(Stack):
         git_input = pipelines.CodePipelineSource.connection(
             repo_string="sumit1912/ci-cd-aws-pipeline-python",
             branch="main",
-            connection_arn="arn:aws:codestar-connections:eu-central-1:496932237066:connection/54bd73f5-1116-4856-805a-7d8725576248"
+            connection_arn="arn:aws:codestar-connections:eu-central-1:496932237066:connection/fa075191-71e3-4ed9-a8fd-383ef06435b4"
         )
 
         code_pipeline = codepipeline.Pipeline(
