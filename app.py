@@ -21,7 +21,7 @@ CiCdAwsPipelinePythonStack(app, "CiCdAwsPipelinePythonStack",
     # want to deploy the stack to. */
 
     env=cdk.Environment(account='496932237066', region='eu-central-1'),
-    stack_name='github-codepipeline-stack'
+    stack_name='github-codepipeline-stack-by-sumit'
 
     # For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html
     )
