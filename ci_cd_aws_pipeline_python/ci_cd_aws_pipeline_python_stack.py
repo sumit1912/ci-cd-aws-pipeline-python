@@ -25,7 +25,7 @@ class CiCdAwsPipelinePythonStack(Stack):
         git_input = pipelines.CodePipelineSource.connection(
             repo_string="sumit1912/ci-cd-aws-pipeline-python",
             branch="main",
-            connection_arn="arn:aws:codestar-connections:eu-central-1:231277233417:connection/074bfd84-605c-451f-9b37-7180a71cf2d1"
+            connection_arn="arn:aws:codestar-connections:eu-central-1:242641365325:connection/f61ba241-6cbb-4a2b-aa74-370c22137fd5"
         )
 
         code_pipeline = codepipeline.Pipeline(
@@ -56,5 +56,5 @@ class CiCdAwsPipelinePythonStack(Stack):
 
         deployment_wave.add_stage(DeployStage(
             self, 'DeployStage3111',
-            env=(Environment(account='231277233417', region='eu-central-1'))
+            env=(Environment(account='242641365325', region='eu-central-1'))
         ))
